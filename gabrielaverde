@@ -1,0 +1,59 @@
+using System;
+
+namespace programa_edad_altura
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+         
+            string cadena ="";
+            int ingresoedad = 0;
+            double ingresoaltura = 0.0;
+
+            Console.WriteLine("---------------------------------------------");
+	    Console.WriteLine("BIENVENIDOS AL PARQUE VERDE DIVERSION TOTAL");
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("Antes de ingresar, por favor indica tu edad:");
+            cadena = Console.ReadLine();
+            ingresoedad = Convert.ToInt32(cadena);
+            
+            
+            if(edad <= 15)
+            {
+                Console.WriteLine("Lo lamento, debes ser mayor a 15 años o mas para el uso de las atracciones.");
+            }
+            else
+            {
+                
+                Console.WriteLine("---------------------------------------------");
+                Console.WriteLine("CONTROL DE ESTATURA");
+                Console.WriteLine("---------------------------------------------");
+                Console.WriteLine("Indica tu estatura en metros para indicarte las atracciones que puedes acceder");
+                cadena = Console.ReadLine();
+                ingresoaltura = Convert.ToDouble(cadena);
+                
+                if(ingresoaltura < 1.5)
+                {
+                Console.WriteLine("Solo tienes ingreso a CASA EMBRUJADA, TOBOGANES MEDIANOS, BOLOS, CARRUSEL");    
+                }
+                else
+                {
+                    Console.WriteLine("Puedes acceder a MONTAÑA RUSA, SILLAS VOLADORAS, MARTILLO");
+
+	        Console.WriteLine("---------------------------------------------");
+                Console.WriteLine("RECUERDA: No portar objestos que puedas perder en estas atracciones");
+                Console.WriteLine("---------------------------------------------");
+                
+                }
+                //
+            }
+            
+            
+            
+            
+            Console.ReadKey();
+        
+        }
+    }
+}   
